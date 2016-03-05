@@ -32,4 +32,8 @@ deleteItems.addEventListener("click", deleteCard);
 function deleteCard(event){
 	this.removeChild(event.target.parentNode);
 }
+//The key part in this exercise is the delete containing card function. 
+//1. You have to select an existing parentNode, but not the dynamic one. In this case, select "myList" in ul
+//2. the event and event.target, for some reason, is for "button delete", but not ul
+//3. use the console, element--event Listener to determine if an event is selected.
 
